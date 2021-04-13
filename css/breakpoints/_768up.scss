@@ -1,0 +1,139 @@
+// header
+.header {
+  &__nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 27vw;
+    text-align: center;
+    padding: 120px 0 0;
+    background: #ffffff;
+    z-index: 20;
+    // 初期状態では表示させないようにする
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 0.3s, opacity 0.3s;
+    a {
+      color: #333333;
+    }
+  }
+  &__link {
+    margin-left: 9vw;
+  }
+}
+.nav {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__item {
+    font-size: 2rem;
+    margin: 0 0 50px;
+  }
+}
+
+.header-btn {
+  display: none;
+}
+// バーガーボタン閉
+.burger-btn {
+  position: fixed;
+  right: 12vw;
+  z-index: 30;
+  display: block;
+}
+.bar {
+  display: block;
+  background: #333333;
+  height: 2px;
+  width: 22px;
+  border-radius: 1px;
+  &_top {
+    transform: translateY(-4px);
+    transition: transform 0.3s;
+  }
+  &_bottom {
+    transform: translateY(4px);
+    transition: transform 0.3s;
+  }
+}
+
+// ハンバーガーメニュー開
+.bar.cross {
+  &.bar_top {
+    transform: translateY(2px) rotate(30deg);
+    transition: transform 0.3s;
+  }
+  &.bar_mid {
+    opacity: 0;
+    transition: transform 0.3s;
+  }
+  &.bar_bottom {
+    transform: translateY(-2px) rotate(-30deg);
+    transition: transform 0.3s;
+  }
+}
+body.noscroll {
+  overflow: hidden;
+}
+.header {
+  &__nav.open {
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+}
+.burger-musk {
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+// fv
+.fv {
+  &__wrapper {
+    flex-direction: column;
+    padding: 0 0;
+    margin-bottom: 100px;
+  }
+  &__inner {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 100px;
+  }
+  &__title,
+  &__text {
+    text-align: left;
+  }
+}
+
+.main-img {
+  max-width: 384px;
+  margin: 0 auto;
+  margin-top: 0;
+}
+
+//FAQ
+.faq {
+  &__list {
+    width: 80vw;
+  }
+}
+
+//blog
+.articles {
+  flex-direction: column;
+}
+.article {
+  width: calc(100vw - 140px);
+  &:not(:last-child) {
+    margin-bottom: 50px;
+  }
+}

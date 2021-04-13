@@ -1,0 +1,29 @@
+//fv
+.fv {
+  &__wrapper {
+    padding: 0 19vw 0 20vw;
+  }
+}
+
+//Features
+.feature {
+  &__item {
+    &:first-of-type {
+      & img {
+        margin-left: 23.5vw;
+      }
+    }
+    &:nth-of-type(2) {
+      & .feature {
+        &__word {
+          padding-left: 25vw;
+        }
+      }
+    }
+    &:nth-of-type(3) {
+      & img {
+        padding-left: 25vw;
+      }
+    }
+  }
+}

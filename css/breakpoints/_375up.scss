@@ -1,0 +1,154 @@
+//base
+body,
+.paragraph {
+  font-size: 1.4rem;
+}
+.section {
+  &__title {
+    font-size: 2.7rem;
+    line-height: 1.2;
+    padding: 0 15px 0;
+  }
+  &__sub-title {
+    font-size: 2.2rem;
+  }
+  &__text {
+    font-size: 1.8rem;
+    padding: 0 20px 0;
+    line-height: 1.5;
+  }
+  &__sub-text {
+    font-size: 1.4rem;
+    padding: 0 20px 0;
+  }
+}
+
+.br-none {
+  display: none;
+}
+
+//header
+.header {
+  &__title {
+    font-size: 2.2rem;
+  }
+  &__link {
+    margin-left: 0;
+  }
+  &__nav {
+    width: 30vw;
+  }
+}
+.nav {
+  &__item {
+    font-size: 1.4rem;
+  }
+}
+
+// fv
+.fv {
+  &__inner {
+    padding: 170px 0 70px;
+  }
+  &__title {
+    font-size: 3rem;
+    text-align: center;
+  }
+  &__text {
+    text-align: center;
+  }
+}
+.main-img {
+  max-width: 300px;
+  height: 249px;
+}
+
+//features
+.feature {
+  &__wrapper {
+    padding-bottom: 100px;
+  }
+  &__item {
+    &:first-of-type {
+      & img {
+        max-width: 300px;
+      }
+    }
+    &:nth-of-type(2) {
+      & img {
+        max-width: 330px;
+      }
+    }
+    &:nth-of-type(3) {
+      & img {
+        max-width: 320px;
+      }
+    }
+  }
+}
+
+//Price
+.price {
+  &__wrapper {
+    & br {
+      display: inline;
+    }
+  }
+  &__title {
+    margin-bottom: 40px;
+  }
+}
+.value {
+  padding-right: 60px;
+  padding-left: 60px;
+  box-sizing: border-box;
+  width: 167px;
+}
+
+//FAQ
+.faq {
+  &__list {
+    width: 100%;
+  }
+}
+
+//Blog
+.blog {
+  &__wrapper {
+    padding: 55px 20px 80px;
+  }
+  &__content {
+    padding: 14px 14px 35px;
+  }
+}
+.article {
+  width: calc(100vw - 40px);
+  &:not(:last-child) {
+    margin-bottom: 50px;
+  }
+  &__content {
+    padding: 14px 14px 35px;
+  }
+}
+
+//Contact
+.contact {
+  &__wrapper {
+    padding: 63px 20px 80px;
+  }
+  &__inner {
+    padding: 34px 25px 35px;
+  }
+}
+.input {
+  &__text {
+    width: 100%;
+  }
+}
+
+//footer
+.footer {
+  &__title {
+    font-size: 2.2rem;
+  }
+}

@@ -1,0 +1,15 @@
+@import "breakpoints/base";
+@media screen and (max-width: 1920px) {
+  @import "breakpoints/1920up";
+}
+
+@media screen and (max-width: 1280px) {
+  @import "breakpoints/1280up";
+}
+
+@media screen and (max-width: 768px) {
+  @import "breakpoints/768up";
+}
+@media screen and (max-width: 375px) {
+  @import "breakpoints/375up";
+}
